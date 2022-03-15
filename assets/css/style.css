@@ -2,7 +2,7 @@
 /* container */
 
 body {
-    background-color: rgb(46, 46, 46);
+    background-color: #1b1b1b;
 }
 
 .safe {
@@ -22,16 +22,35 @@ body {
     border-radius: 20px;
 }
 
+.del{
+    background-color: rgb(209, 69, 69);
+    color:white;
+}
+
+.del:hover{
+    background-color: rgb(175, 58, 58);
+}
+
+.confirm{
+    background-color: #BBF91F;
+}
+
+.confirm:hover{
+    background-color: #8dbd16;
+    color: black;
+}
+
 .container { 
     width: 340px; 
     /* margin: 0 auto;  */
     background-color: rgb(39, 39, 39); 
     overflow: hidden;
     margin-top: 1em; 
-    box-shadow: 10px 10px 5px #000000; 
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15); 
     border-radius: 10px;
     border: 1px solid #1b1b1b; 
     padding: 20px;
+    margin: 0;
 }
 
   input[type="password"] { 
@@ -60,19 +79,20 @@ body {
       /* border: 0; */
       background-color: #fff; 
       border: 1px solid black;
-      border-radius: 30px;
+      border-radius: 20px;
       /* padding: 5px; */
       /* display: block;
       float: left; */
       width: 100px;
-      padding: 1em 0;
+      padding: 15px 0;
       cursor: pointer;
       margin: 5px;
+      font-size: 22px;
   }
   button:hover, button:active, button:focus {
-       background-color: #242424; 
+       background-color: #b4b4b4; 
        outline: 0; 
-       color: #fff; 
+       color: black; 
     }
   
   

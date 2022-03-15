@@ -10,13 +10,13 @@ temp_+= '<button type="button" value="' + teclas[i] + '" onclick="clickNumber(th
  document.getElementById("keys").innerHTML = temp_;
 };
 
-temp_ = '<button class="grey" type="button" onclick="clickClear()">DEL</button>';
+temp_ = '<button class="del" type="button" onclick="clickClear()">DEL</button>';
 document.getElementById("keys").innerHTML += temp_;
   
 temp_ = '<button type="button" value="' + teclas[9] + '" onclick="clickNumber(this.value)">' + teclas[9] + '</button>';
 document.getElementById("keys").innerHTML += temp_;
 
-temp_ = '<button class="grey" type="button" onclick="clickOk()">OK</button>';
+temp_ = '<button class="confirm" type="button" onclick="clickOk()">OK</button>';
 document.getElementById("keys").innerHTML += temp_;
 
 }
