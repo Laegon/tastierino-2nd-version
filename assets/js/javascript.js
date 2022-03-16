@@ -1,12 +1,26 @@
 var total_characters = 10;
 var total_clicks = 0;
-var password="111111";
+var password = 0;
 
 function calculateResult(n){
 		if (n < 2) {
 		  return n;
 		}
 		return calculateResult(n - 1) + calculateResult(n - 2);
+}
+
+function rotate() {
+	for (var i = 1; i < 11; i++) {
+        (function (x) {
+            setInterval(function () {
+                document.getElementById("handle").style.WebkitAnimationName = "rotation";
+            }, 200 * i);
+        })(i);
+    }
+  }
+
+function openSafe(){
+	rotate();
 }
 
 function makeButtons(){	
@@ -46,9 +60,8 @@ function clickOk(){
 	password = document.getElementById("newpassword").value;
 	document.getElementById("newpassword").value = "";
 	total_clicks=0;
-	console.log(password);
-	console.log(calculateResult(24))
 	if(calculateResult(24) === parseInt(password)){
+		openSafe();
 		alert("Correct");
 	}
 	else{
